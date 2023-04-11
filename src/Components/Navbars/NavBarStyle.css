@@ -17,8 +17,22 @@ body {
   justify-content: space-between;
   align-items: stretch;
   gap: 30px;
-  padding: 0 8.4rem;
+  padding: 1rem 8.4rem;
   position: fixed;
+  height: 70px;
+}
+
+.nav-second {
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  padding: 1rem 8.4rem;
+  height: 90px;
+  position: fixed;
+  top: 70px;
 }
 
 .site-title {

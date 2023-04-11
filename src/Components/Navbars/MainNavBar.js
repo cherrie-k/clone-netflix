@@ -1,6 +1,6 @@
-import DetailSearch from "./DetailSearch";
-import NavGlobe from "./NavGlobe";
-import NavLogin from "./NavLogin";
+import DetailSearch from "./elements/DetailSearch";
+import NavGlobe from "./elements/NavGlobe";
+import NavLogin from "./elements/NavLogin";
 import "./NavBarStyle.css";
 
 export default function MainNavBar() {
