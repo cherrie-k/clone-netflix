@@ -1,19 +1,9 @@
-import MainNavBar from "./Components/Navbars/MainNavBar";
-import MainSecondNav from "./Components/Navbars/MainSecondNav";
-import TempMain from "./Components/TempMain";
+import MainPage from "./pages/MainPage";
 
 function App() {
   return (
     <div className="App">
-      <MainNavBar />
-      <MainSecondNav />
-      <div
-        className="container"
-        style={{ margin: "0", padding: "0", background: "salmon" }}
-      >
-        <div>Learn REACT</div>
-        <TempMain />
-      </div>
+      <MainPage />
     </div>
   );
 }
