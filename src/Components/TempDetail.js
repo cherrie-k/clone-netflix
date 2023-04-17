@@ -18,7 +18,7 @@ const MainPageBlock = styled.section`
   gap: 100px;
 `;
 
-export default function TempMain() {
+export default function TempDetail() {
   return (
     <>
       <main>

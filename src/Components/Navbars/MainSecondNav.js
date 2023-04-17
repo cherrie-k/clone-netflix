@@ -1,8 +1,21 @@
-import "./NavBarStyle.css";
+import styled from "styled-components";
+
+const NavSecondBlock = styled.nav`
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  padding: 1rem 8.4rem;
+  height: 90px;
+  position: fixed;
+  top: 70px;
+`;
 
 export default function MainSecondNav() {
   return (
-    <nav className="nav-second" style={{ display: "flex" }}>
+    <NavSecondBlock>
       <button>해변 근처</button>
       <button>최고의 전망</button>
       <button>한옥</button>
@@ -27,6 +40,6 @@ export default function MainSecondNav() {
         {">"}
       </div>
       <div>필터</div>
-    </nav>
+    </NavSecondBlock>
   );
 }

@@ -1,5 +1,17 @@
-import "./NavBarStyle.css";
 import styled from "styled-components";
+
+const NavSecondBlock = styled.nav`
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  padding: 1rem 8.4rem;
+  height: 90px;
+  position: fixed;
+  top: 70px;
+`;
 
 const SelectBlock = styled.div`
   display: flex;
@@ -16,7 +28,7 @@ const ReviewBlock = styled.div`
 
 export default function DetailSecondNav() {
   return (
-    <nav className="nav-second" style={{ display: "flex" }}>
+    <NavSecondBlock>
       <SelectBlock>
         <button>사진</button>
         <button>편의시설</button>
@@ -34,6 +46,6 @@ export default function DetailSecondNav() {
         </ReviewBlock>
       </div>
       <button>예약하기</button>
-    </nav>
+    </NavSecondBlock>
   );
 }
