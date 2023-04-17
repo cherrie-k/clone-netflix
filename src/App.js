@@ -1,9 +1,11 @@
 import MainPage from "./pages/MainPage";
+import DetailPage from "./pages/DetailPage";
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
+      {/* <MainPage /> */}
+      <DetailPage />
     </div>
   );
 }
