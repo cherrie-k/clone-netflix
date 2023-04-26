@@ -1,18 +1,12 @@
-import MainNavBar from "../Components/Navbars/MainNavBar";
-import MainSecondNav from "../Components/Navbars/MainSecondNav";
-import TempMain from "../Components/TempMain";
+import TopBlock from "../Components/MainPage/TopBlock";
+import BottomBlock from "../Components/BottomBlock";
+import styled from "styled-components";
 
 export default function MainPage() {
   return (
     <div className="App">
-      <MainNavBar />
-      <div
-        className="container"
-        style={{ margin: "0", padding: "0", background: "salmon" }}
-      >
-        <div>Learn REACT</div>
-        <TempMain />
-      </div>
+      <TopBlock />
+      <BottomBlock />
     </div>
   );
 }

@@ -10,7 +10,6 @@ const NavSecondBlock = styled.nav`
   padding: 1rem 8.4rem;
   height: 90px;
   position: fixed;
-  top: 70px;
 `;
 
 const SelectBlock = styled.div`

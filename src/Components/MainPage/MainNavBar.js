@@ -2,16 +2,14 @@ import styled from "styled-components";
 import { VscGlobe } from "react-icons/vsc";
 
 const NavBlock = styled.nav`
-  background-color: navy; /*white*/
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   padding: 0.3rem 1.3rem;
   align-items: center;
 `;
 
 const RightBox = styled.div`
-  padding-right: 50px;
+  padding-right: 30px;
 
   .lang {
     padding: 6px 15px;
