@@ -1,35 +1,54 @@
-import DetailSearch from "./elements/DetailSearch";
-import NavGlobe from "./elements/NavGlobe";
-import NavLogin from "./elements/NavLogin";
 import styled from "styled-components";
-import TempLogo from "./elements/temp/TempLogo";
+import { VscGlobe } from "react-icons/vsc";
 
 const NavBlock = styled.nav`
-  width: 100%;
-  background-color: gainsboro; /*white*/
+  background-color: navy; /*white*/
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
   gap: 30px;
-  padding: 1rem 8.4rem;
-  position: fixed;
-  height: 70px;
+  padding: 0.3rem 1.3rem;
+  align-items: center;
+`;
 
-  a {
-    display: flex;
-    color: red;
-    height: 100%;
+const RightBox = styled.div`
+  padding-right: 50px;
+
+  .lang {
+    padding: 6px 15px;
+    border: solid 1px gainsboro;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+  }
+
+  .login-button {
+    background: #e50914;
+    padding: 6px 15px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 16px;
   }
 `;
 
 export default function MainNavBar() {
   return (
     <NavBlock>
-      <TempLogo />
-      <DetailSearch />
-      <a href="/host/homes">당신의 공간을 에어비앤비하세요</a>
-      <NavGlobe />
-      <NavLogin />
+      <img
+        src={`${process.env.PUBLIC_URL}/Netflix_Logo_PMS.png`}
+        alt="Netflix"
+        height="70px;"
+      />
+      <RightBox>
+        <select className="lang">
+          <option value="korean">
+            <div>한국어</div>
+          </option>
+          <option value="english">English</option>
+        </select>
+        <button className="login-button">로그인</button>
+      </RightBox>
     </NavBlock>
   );
 }

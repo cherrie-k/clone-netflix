@@ -6,7 +6,6 @@ export default function MainPage() {
   return (
     <div className="App">
       <MainNavBar />
-      <MainSecondNav />
       <div
         className="container"
         style={{ margin: "0", padding: "0", background: "salmon" }}

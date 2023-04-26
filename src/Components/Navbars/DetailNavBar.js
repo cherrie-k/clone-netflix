@@ -1,7 +1,4 @@
-import NavGlobe from "./elements/NavGlobe";
-import NavLogin from "./elements/NavLogin";
 import styled from "styled-components";
-import TempLogo from "./elements/temp/TempLogo";
 
 const NavBlock = styled.nav`
   width: 100%;
@@ -24,10 +21,7 @@ const NavBlock = styled.nav`
 export default function DetailNavBar() {
   return (
     <NavBlock>
-      <TempLogo />
       <a href="/host/homes">당신의 공간을 에어비앤비하세요</a>
-      <NavGlobe />
-      <NavLogin />
     </NavBlock>
   );
 }
