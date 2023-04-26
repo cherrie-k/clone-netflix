@@ -1,12 +1,18 @@
 import TopBlock from "../Components/MainPage/TopBlock";
-import BottomBlock from "../Components/BottomBlock";
+import MiddleBlock from "../Components/MiddleBlock";
 import styled from "styled-components";
+
+const BackgroundBox = styled.div`
+  background: rgb(0, 8, 29);
+`;
 
 export default function MainPage() {
   return (
     <div className="App">
-      <TopBlock />
-      <BottomBlock />
+      <BackgroundBox>
+        <TopBlock />
+        <MiddleBlock />
+      </BackgroundBox>
     </div>
   );
 }
