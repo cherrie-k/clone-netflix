@@ -1,3 +1,4 @@
+import EmailStart from "./elements/emailStart";
 import styled from "styled-components";
 
 const DescBox = styled.div`
@@ -30,11 +31,11 @@ const DescBox = styled.div`
     }
     .mid {
       font-size: 16px;
-      padding: 10px 8px;
+      padding: 15px 0 0px 8px;
     }
     .small {
       font-size: 16px;
-      padding: 10px 8px;
+      padding: 0px 0px 15px 8px;
     }
   }
 
@@ -42,32 +43,6 @@ const DescBox = styled.div`
     .big {
       font-size: 30px;
     }
-  }
-`;
-
-const StartBox = styled.div`
-  height: 50px;
-  display: flex;
-
-  input {
-    padding: 0 15px;
-    height: 100%;
-    width: 300px;
-    margin-right: 5px;
-    border: solid 1px gainsboro;
-    border-radius: 6px;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: large;
-  }
-
-  button {
-    width: 150px;
-    height: 100%;
-    border: solid 1px gainsboro;
-    border-radius: 6px;
-    background: var(--netflix-red);
-    color: white;
-    font-size: x-large;
   }
 `;
 
@@ -83,10 +58,7 @@ export default function MainDescribe() {
         시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
         입력하세요.
       </div>
-      <StartBox>
-        <input placeholder="이메일 주소"></input>
-        <button>시작하기&gt;</button>
-      </StartBox>
+      <EmailStart />
     </DescBox>
   );
 }

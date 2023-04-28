@@ -33,6 +33,16 @@ const ContentBox = styled.div`
     font-weight: 400;
     line-height: 1.3em;
   }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    h1 {
+      font-size: 36px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
 `;
 
 const Line = styled.div`
@@ -57,7 +67,8 @@ export default function MiddleBlock() {
             <img
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/enjoyOnTv/en.png"
               alt="img"
-              width="580px"
+              width="100%"
+              style={{ minWidth: "240px" }}
             />
           </div>
         </ContentBox>
@@ -67,7 +78,8 @@ export default function MiddleBlock() {
             <img
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/watchEverywhere/en.png"
               alt="img"
-              width="560px"
+              width="100%"
+              style={{ minWidth: "240px" }}
             />
           </div>
           <div>
@@ -91,7 +103,8 @@ export default function MiddleBlock() {
             <img
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/kids/ko.png"
               alt="img"
-              width="560px"
+              width="100%"
+              style={{ minWidth: "240px" }}
             />
           </div>
         </ContentBox>
@@ -101,7 +114,8 @@ export default function MiddleBlock() {
             <img
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/cards/v2.1/download/ko.png"
               alt="img"
-              width="560px"
+              width="100%"
+              style={{ minWidth: "240px" }}
             />
           </div>
           <div>
