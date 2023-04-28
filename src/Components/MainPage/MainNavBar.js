@@ -20,7 +20,7 @@ const RightBox = styled.div`
   }
 
   .login-button {
-    background: #e50914;
+    background: var(--netflix-red);
     padding: 6px 15px;
     color: white;
     border: none;

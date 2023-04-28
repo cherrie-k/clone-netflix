@@ -1,8 +1,48 @@
 import styled from "styled-components";
 
 const DescBox = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 110px;
   color: white;
+  flex-wrap: wrap;
+
+  .big {
+    font-weight: 900;
+    font-size: 60px;
+    padding: 6px;
+  }
+
+  .mid {
+    font-size: 22px;
+    padding: 15px 8px;
+  }
+
+  .small {
+    font-size: 20px;
+    padding: 20px 8px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .big {
+      font-size: 40px;
+      padding: 0px;
+    }
+    .mid {
+      font-size: 16px;
+      padding: 10px 8px;
+    }
+    .small {
+      font-size: 16px;
+      padding: 10px 8px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .big {
+      font-size: 30px;
+    }
+  }
 `;
 
 const StartBox = styled.div`
@@ -25,7 +65,7 @@ const StartBox = styled.div`
     height: 100%;
     border: solid 1px gainsboro;
     border-radius: 6px;
-    background: #e50914;
+    background: var(--netflix-red);
     color: white;
     font-size: x-large;
   }
@@ -34,16 +74,12 @@ const StartBox = styled.div`
 export default function MainDescribe() {
   return (
     <DescBox>
-      <div style={{ fontWeight: "900", fontSize: "60px", padding: "8px" }}>
-        영화와 시리즈를
-      </div>
-      <div style={{ fontWeight: "900", fontSize: "60px", padding: "8px" }}>
-        무제한으로.
-      </div>
-      <div style={{ fontSize: "22px", padding: "15px 8px" }}>
+      <div className="big">영화, 시리즈 등을</div>
+      <div className="big">무제한으로.</div>
+      <div className="mid">
         다양한 디바이스에서 시청하세요. 언제든 해지하실 수 있습니다.
       </div>
-      <div style={{ fontSize: "large", padding: "20px 8px" }}>
+      <div className="small">
         시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를
         입력하세요.
       </div>

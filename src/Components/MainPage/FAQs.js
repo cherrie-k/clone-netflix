@@ -1,3 +1,19 @@
 import styled from "styled-components";
 
-export default function FAQs() {}
+const FAQsBlock = styled.div`
+  color: white;
+  padding: 100px;
+
+  h1 {
+    font-size: xx-large;
+    font-weight: bold;
+  }
+`;
+
+export default function FAQs() {
+  return (
+    <FAQsBlock>
+      <h1>자주 묻는 질문</h1>
+    </FAQsBlock>
+  );
+}

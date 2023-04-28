@@ -1,4 +1,5 @@
 import MainPage from "./pages/MainPage";
+import "./Styles/globals.css";
 import DetailPage from "./pages/DetailPage";
 import "./Styles/reset.css";
 
