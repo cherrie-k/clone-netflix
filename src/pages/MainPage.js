@@ -1,5 +1,6 @@
 import TopBlock from "../Components/MainPage/TopBlock";
-import MiddleBlock from "../Components/MiddleBlock";
+import MiddleBlock from "../Components/MainPage/MiddleBlock";
+import BottomBlock from "../Components/MainPage/BottomBlock";
 import styled from "styled-components";
 import FAQs from "../Components/MainPage/FAQs";
 
@@ -13,7 +14,7 @@ export default function MainPage() {
       <BackgroundBox>
         <TopBlock />
         <MiddleBlock />
-        <FAQs />
+        <BottomBlock />
       </BackgroundBox>
     </div>
   );

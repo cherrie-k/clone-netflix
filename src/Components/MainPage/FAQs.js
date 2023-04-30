@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 const FAQsBlock = styled.div`
-  color: white;
-  padding: 100px;
-
   h1 {
     font-size: xx-large;
     font-weight: bold;

@@ -34,13 +34,20 @@ const ContentBox = styled.div`
     line-height: 1.3em;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     flex-direction: column;
     h1 {
       font-size: 36px;
     }
     h2 {
       font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+    h1 {
+      font-size: 28px;
     }
   }
 `;
