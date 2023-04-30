@@ -3,13 +3,13 @@ import styled from "styled-components";
 const StartBox = styled.div`
   div:first-child {
     font-size: 22px;
-    padding: 15px 8px;
+    padding: 22px 8px 15px 8px;
     line-height: 1.3em;
 
     @media screen and (max-width: 1000px) {
       font-size: 16px;
       padding: 0px 0px 15px 8px;
-      padding: 15px 8px;
+      padding: 22px 8px 15px 8px;
     }
   }
 
