@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { VscGlobe } from "react-icons/vsc";
 
 const NavBlock = styled.nav`
@@ -20,13 +21,21 @@ const RightBox = styled.div`
   }
 
   .login-button {
+    transition: 0.25s;
     background: var(--netflix-red);
     padding: 6px 15px;
-    color: white;
+    margin-left: 16px;
     border: none;
     border-radius: 4px;
-    font-weight: bold;
-    margin-left: 16px;
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+
+    :hover {
+      transition: 0.25s;
+      cursor: pointer;
+      background: #c11119;
+    }
   }
 `;
 
@@ -45,7 +54,9 @@ export default function MainNavBar() {
           </option>
           <option value="english">English</option>
         </select>
-        <button className="login-button">로그인</button>
+        <Link to="/login" className="login-button">
+          로그인
+        </Link>
       </RightBox>
     </NavBlock>
   );
