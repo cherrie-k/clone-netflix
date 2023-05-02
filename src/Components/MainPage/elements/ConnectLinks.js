@@ -1,14 +1,23 @@
 import styled from "styled-components";
 
 const LinksBox = styled.div`
-  display: grid;
-  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
 `;
 
 const EachLink = styled.div`
   padding: 10px 0px;
+  font-size: 0.8em;
+  margin: 1px;
+  width: 250px;
   color: darkgray;
   text-decoration: underline;
+
+  @media screen and (max-width: 800px) {
+    width: 190px;
+  }
 `;
 
 export default function ConnectLinks() {
