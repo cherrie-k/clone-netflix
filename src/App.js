@@ -1,8 +1,9 @@
 import MainPage from "./pages/MainPage";
 import "./Styles/globals.css";
-import DetailPage from "./pages/DetailPage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./Styles/reset.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DetailPage from "./pages/DetailPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<MainPage />}></Route>
-          <Route path="/login" element={<DetailPage />}></Route>
+          <Route path="/login" element={<LoginPage />}></Route>
           {/* <DetailPage /> */}
         </Routes>
       </div>
