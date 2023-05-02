@@ -1,10 +1,11 @@
-import FAQs from "./FAQs";
+import FAQs from "./elements/FAQs";
 import EmailStart from "./elements/emailStart";
+import ConnectLinks from "./elements/ConnectLinks";
 import styled from "styled-components";
 
 const BottomBlockBox = styled.div`
   color: white;
-  padding: 100px;
+  padding: 100px 130px;
 `;
 
 export default function BottomBlock() {
@@ -18,6 +19,7 @@ export default function BottomBlock() {
           080-001-9587
         </a>
       </div>
+      <ConnectLinks />
     </BottomBlockBox>
   );
 }

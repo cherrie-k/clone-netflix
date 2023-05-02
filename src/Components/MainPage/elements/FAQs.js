@@ -3,7 +3,7 @@ import { VscAdd } from "react-icons/vsc";
 
 const FAQsBlock = styled.div`
   h1 {
-    font-size: xx-large;
+    font-size: 2.4em;
     font-weight: bold;
     padding-bottom: 15px;
   }
@@ -15,7 +15,8 @@ const EachQuestion = styled.div`
   background-color: #132144;
   transition: 0.2s;
   margin-top: 8px;
-  padding: 20px;
+  padding: 25px;
+  font-size: 1.4em;
   cursor: pointer;
 
   :hover {

@@ -1,4 +1,4 @@
-import EmailStart from "./elements/emailStart";
+import EmailStart from "./emailStart";
 import styled from "styled-components";
 
 const DescBox = styled.div`
