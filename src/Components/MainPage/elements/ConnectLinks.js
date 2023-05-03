@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const LinksBox = styled.div`
   display: flex;
@@ -7,7 +8,7 @@ const LinksBox = styled.div`
   max-width: 100%;
 `;
 
-const EachLink = styled.div`
+const EachLink = styled(Link)`
   padding: 10px 0px;
   font-size: 0.8em;
   margin: 1px;
@@ -23,7 +24,7 @@ const EachLink = styled.div`
 export default function ConnectLinks() {
   return (
     <LinksBox>
-      <EachLink>자주 묻는 질문</EachLink>
+      <EachLink to="/help">자주 묻는 질문</EachLink>
       <EachLink>고객 센터</EachLink>
       <EachLink>계정</EachLink>
       <EachLink>미디어 센터</EachLink>
