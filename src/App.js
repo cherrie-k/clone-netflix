@@ -2,7 +2,7 @@ import MainPage from "./pages/MainPage";
 import "./Styles/globals.css";
 import "./Styles/reset.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import DetailPage from "./pages/DetailPage";
+// import DetailPage from "./pages/DetailPage";
 import LoginPage from "./pages/LoginPage";
 import HelpPage from "./pages/HelpPage";
 import ReduxPractice from "./pages/ReduxPractice";
